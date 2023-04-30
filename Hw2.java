@@ -84,17 +84,16 @@ public class Hw2 {
 
     int arr[] = new int[]{2,5,7,8,12,11,17,14};
     int n_1,n_2;
-    int n1_first_term,n1_last_term,n2_first_term,n2_last_term;
+    int n1_first_term = arr[0];
+    int n2_first_term = arr[1];
+    int n1_last_term,n2_last_term;
+    
     if(arr.length%2==1){
-        n1_first_term = arr[0];
         n1_last_term = arr[arr.length-1];
-        n2_first_term = arr[1];
         n2_last_term = arr[arr.length-2];
     }
     else{
-        n1_first_term = arr[0];
         n1_last_term = arr[arr.length-2];
-        n2_first_term = arr[1];
         n2_last_term = arr[arr.length-1];
     }
     n_1 = (n1_last_term - n1_first_term)/5 + 1;
